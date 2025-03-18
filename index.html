@@ -9,62 +9,13 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         .color-preview {
-            width: 500px;
-            height: 250px;
+            width: 1000px;
+            height: 750px;
             margin-top: 20px;
             border: 1px solid #000;
         }
 
-        .blue-slider {
-            -webkit-appearance: none;
-            /* Fjener standardstilen i WebKit-browsere */
-            width: 12%;
-            /* Bredden af slideren */
-            height: 8px;
-            /* Højden af slideren */
-            background: #0000ff;
-            /* Blå baggrundsfarve */
-            outline: none;
-            /* Fjerner outline */
-            opacity: 0.7;
-            /* Gør den lidt gennemsigtig */
-            transition: opacity .2s;
-            /* Glat overgang ved hover */
-        }
-
-        .green-slider {
-            -webkit-appearance: none;
-            /* Fjener standardstilen i WebKit-browsere */
-            width: 12%;
-            /* Bredden af slideren */
-            height: 8px;
-            /* Højden af slideren */
-            background: #00ff00;
-            /* Grøn baggrundsfarve */
-            outline: none;
-            /* Fjerner outline */
-            opacity: 0.7;
-            /* Gør den lidt gennemsigtig */
-            transition: opacity .2s;
-            /* Glat overgang ved hover */
-        }
-
-        .red-slider {
-            -webkit-appearance: none;
-            /* Fjener standardstilen i WebKit-browsere */
-            width: 12%;
-            /* Bredden af slideren */
-            height: 8px;
-            /* Højden af slideren */
-            background: #ff0000;
-            /* Rød baggrundsfarve */
-            outline: none;
-            /* Fjerner outline */
-            opacity: 0.7;
-            /* Gør den lidt gennemsigtig */
-            transition: opacity .2s;
-            /* Glat overgang ved hover */
-        }
+       
     </style>
     <title>Document</title>
 </head>
@@ -76,11 +27,11 @@
             <p>Brug skyderne til at vælge en farve</p>
 
             <label for="r">Rød:</label>
-            <input type="range" v-model="r" min="0" max="255" class="red-slider" />
+            <input style="accent-color: red;width: 400px;" type="range" v-model="r" min="0" max="255"  />
             <label for="g">Grøn:</label>
-            <input type="range" v-model="g" min="0" max="255" class="green-slider" />
+            <input style="accent-color: green;width: 400px;" type="range" v-model="g" min="0" max="255" />
             <label for="b">Blå:</label>
-            <input type="range" v-model="b" min="0" max="255" class="blue-slider" />
+            <input style="accent-color: blue;width: 400px;"type="range" v-model="b" min="0" max="255"  />
 
             <p>Farve: {{ r }}, {{ g }}, {{ b }}</p>
         </div>
